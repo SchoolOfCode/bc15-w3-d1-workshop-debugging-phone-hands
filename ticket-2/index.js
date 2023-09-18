@@ -1,4 +1,4 @@
-function extractInitialsFromFullName("Abe Maxwell") {
+function extractInitialsFromFullName(fullName) {
 /** Assumes that each name within the full name is separated by a "space" that can be used as a separator/delimiter.  */
 const names = fullName.split(" ");
 let initials = "";
@@ -12,4 +12,4 @@ initials += currentInitial;
 return initials;
 }
 
-console.log(initials)
+console.log(extractInitialsFromFullName("Martin Boxer Harris"));
